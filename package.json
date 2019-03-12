@@ -1,0 +1,226 @@
+{
+  "name": "daet",
+  "version": "1.0.0",
+  "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
+  "homepage": "https://github.com/bevry/daet",
+  "license": "MIT",
+  "keywords": [
+    "add",
+    "ago",
+    "calendar",
+    "date",
+    "dates",
+    "datetime",
+    "format",
+    "formatting",
+    "from now",
+    "from",
+    "immutable",
+    "javascript",
+    "minimal",
+    "minus",
+    "moment",
+    "now",
+    "parse",
+    "plus",
+    "relative",
+    "small",
+    "substract",
+    "time",
+    "timeago",
+    "tiny",
+    "types",
+    "typescript"
+  ],
+  "badges": {
+    "list": [
+      "travisci",
+      "npmversion",
+      "npmdownloads",
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "patreon",
+      "flattr",
+      "liberapay",
+      "thanksapp",
+      "boostlab",
+      "buymeacoffee",
+      "opencollective",
+      "crypto",
+      "paypal",
+      "wishlist"
+    ],
+    "config": {
+      "buymeacoffeeUsername": "balupton",
+      "cryptoURL": "https://bevry.me/crypto",
+      "flattrUsername": "balupton",
+      "liberapayUsername": "bevry",
+      "opencollectiveUsername": "bevry",
+      "patreonUsername": "bevry",
+      "paypalURL": "https://bevry.me/paypal",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com"
+    }
+  },
+  "author": "2019+ Benjamin Lupton <b@lupton.cc>",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc>"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/daet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevry/daet.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "editions": [
+    {
+      "description": "typescript source code with import for modules",
+      "directory": "source",
+      "entry": "index.ts",
+      "tags": [
+        "typescript",
+        "import"
+      ],
+      "engines": false
+    },
+    {
+      "description": "typescript compiled for browsers with import for modules",
+      "directory": "edition-browsers",
+      "entry": "index.js",
+      "tags": [
+        "javascript",
+        "import"
+      ],
+      "engines": {
+        "node": false,
+        "browsers": "defaults"
+      }
+    },
+    {
+      "description": "typescript compiled for node.js 11 with require for modules",
+      "directory": "edition-node-11",
+      "entry": "index.js",
+      "tags": [
+        "javascript",
+        "require"
+      ],
+      "engines": {
+        "node": "8 || 10 || 11",
+        "browsers": false
+      }
+    }
+  ],
+  "types": "source/index.ts",
+  "main": "edition-node-11/index.js",
+  "browser": "edition-browsers/index.js",
+  "dependencies": {
+    "@bevry/memo": "^1.0.0",
+    "simplytyped": "^1.8.0",
+    "start-of-week": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "assert-helpers": "^4.9.6",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "eslint": "^5.15.1",
+    "eslint-config-bevry": "^1.2.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "kava": "^3.1.0",
+    "prettier": "^1.16.4",
+    "projectz": "^1.7.4",
+    "surge": "^0.20.1",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.3333",
+    "valid-directory": "^1.0.0"
+  },
+  "scripts": {
+    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
+    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-node-11",
+    "our:compile:edition-browsers": "env BABEL_ENV=edition-browsers babel --extensions \".ts,.tsx\" --out-dir ./edition-browsers ./source",
+    "our:compile:edition-node-11": "env BABEL_ENV=edition-node-11 babel --extensions \".ts,.tsx\" --out-dir ./edition-node-11 ./source",
+    "our:deploy": "echo no need for this project",
+    "our:meta": "npm run our:meta:docs && npm run our:meta:projectz",
+    "our:meta:docs": "npm run our:meta:docs:typedoc",
+    "our:meta:docs:typedoc": "rm -Rf ./docs && typedoc --mode file --exclude '**/+(*test*|node_modules)' --name \"$npm_package_name\" --readme ./README.md --out ./docs ./source",
+    "our:meta:projectz": "projectz compile",
+    "our:release": "npm run our:release:prepare && npm run our:release:check-changelog && npm run our:release:check-dirty && npm run our:release:tag && npm run our:release:push",
+    "our:release:check-changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",
+    "our:release:check-dirty": "git diff --exit-code",
+    "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
+    "our:release:push": "git push origin master && git push origin --tags",
+    "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
+    "our:setup": "npm run our:setup:install",
+    "our:setup:install": "npm install",
+    "our:test": "npm run our:verify && npm test",
+    "our:verify": "npm run our:verify:directory && npm run our:verify:eslint && npm run our:verify:typescript",
+    "our:verify:directory": "npx valid-directory",
+    "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
+    "our:verify:typescript": "tsc --noEmit --project .",
+    "test": "node ./edition-node-11/test.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "bevry"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "babel": {
+    "env": {
+      "edition-browsers": {
+        "sourceType": "module",
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": "defaults",
+              "modules": false
+            }
+          ],
+          "@babel/preset-typescript"
+        ],
+        "plugins": [
+          "@babel/proposal-object-rest-spread",
+          "@babel/proposal-class-properties",
+          "add-module-exports"
+        ]
+      },
+      "edition-node-11": {
+        "sourceType": "module",
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "node": "11"
+              },
+              "modules": "commonjs"
+            }
+          ],
+          "@babel/preset-typescript"
+        ],
+        "plugins": [
+          "@babel/proposal-object-rest-spread",
+          "@babel/proposal-class-properties",
+          "add-module-exports"
+        ]
+      }
+    }
+  },
+  "contributors": []
+}
