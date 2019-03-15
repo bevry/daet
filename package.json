@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -119,8 +119,8 @@
   "main": "edition-node-11/index.js",
   "browser": "edition-browsers/index.js",
   "dependencies": {
-    "@bevry/memo": "^1.0.0",
-    "simplytyped": "^1.8.0",
+    "@bevry/memo": "^1.0.1",
+    "simplytyped": "^3.0.0",
     "start-of-week": "^1.0.0"
   },
   "devDependencies": {
@@ -141,7 +141,7 @@
     "kava": "^3.1.0",
     "prettier": "^1.16.4",
     "projectz": "^1.7.4",
-    "surge": "^0.20.1",
+    "surge": "^0.20.3",
     "typedoc": "^0.14.2",
     "typescript": "^3.3.3333",
     "valid-directory": "^1.0.0"
@@ -222,5 +222,7 @@
       }
     }
   },
-  "contributors": []
+  "contributors": [
+    "Benjamin Lupton (http://balupton.com)"
+  ]
 }

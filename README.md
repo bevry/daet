@@ -85,7 +85,7 @@ Beause Daet:
 -   is written in typescript, so you get great intellisense
 -   is immutable, so no funy business
 -   is absolutely tiny in size
--   yet it has the most intuitive, rich, and effecient relative date interface out there
+-   yet it has the most intuitive, rich, and efficient relative date interface out there
 
 <!-- HISTORY/ -->
 
@@ -132,7 +132,9 @@ No sponsors yet! Will you be the first?
 
 <h3>Contributors</h3>
 
-No contributors yet! Will you be the first?
+These amazing people have contributed code to this project:
+
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/daet/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
