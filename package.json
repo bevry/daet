@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -59,13 +59,15 @@
       "opencollectiveUsername": "bevry",
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
-      "wishlistURL": "https://bevry.me/wishlist",
-      "travisTLD": "com"
+      "wishlistURL": "https://bevry.me/wishlist"
     }
   },
   "author": "2019+ Benjamin Lupton <b@lupton.cc>",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc>"
+  ],
+  "contributors": [
+    "Benjamin Lupton (http://balupton.com)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/daet/issues"
@@ -125,16 +127,16 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-typescript": "^7.3.3",
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "@typescript-eslint/parser": "^1.5.0",
     "assert-helpers": "^4.9.6",
     "babel-plugin-add-module-exports": "^1.0.0",
-    "eslint": "^5.15.1",
+    "eslint": "^5.15.3",
     "eslint-config-bevry": "^1.2.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
@@ -143,7 +145,7 @@
     "projectz": "^1.7.4",
     "surge": "^0.20.3",
     "typedoc": "^0.14.2",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.3.4000",
     "valid-directory": "^1.0.0"
   },
   "scripts": {
@@ -221,8 +223,5 @@
         ]
       }
     }
-  },
-  "contributors": [
-    "Benjamin Lupton (http://balupton.com)"
-  ]
+  }
 }

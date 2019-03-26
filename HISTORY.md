@@ -1,5 +1,9 @@
 # History
 
+## v1.0.2 2019 March 26
+
+-   Updated dev dependencies
+
 ## v1.0.1 2019 March 15
 
 -   Better bundle support by using `/index` instead of `/` inside internal files
