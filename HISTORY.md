@@ -1,5 +1,9 @@
 # History
 
+## v1.2.0 2019 May 13
+
+-   Daet now also exports its types
+
 ## v1.1.0 2019 May 13
 
 -   Added `module` field to point to the browser edition, as this project uses EcmaScript Modules, this adds support for [pika](https://www.pikapkg.com)

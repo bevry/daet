@@ -5,15 +5,15 @@ import startOfWeek from 'start-of-week'
 
 import * as intl from './intl.js'
 
-type SetUnits = 'millisecond' | 'second' | 'minute' | 'hour'
-type ArithmeticUnits =
+export type SetUnits = 'millisecond' | 'second' | 'minute' | 'hour'
+export type ArithmeticUnits =
 	| 'millisecond'
 	| 'second'
 	| 'minute'
 	| 'hour'
 	| 'week'
 	| 'day'
-type Input = string | number | Date | Daet
+export type Input = string | number | Date | Daet
 
 export const Millisecond = 1
 export const Second = Millisecond * 1000
@@ -23,7 +23,7 @@ export const Day = Hour * 24
 export const Week = Day * 7
 
 /** The abstract base tier to use for the human relative date display. */
-interface BaseTier {
+export interface BaseTier {
 	/** How long in milliseconds until this particular tier becomes irrelevant? If not specified then it will be detected automatically. */
 	refresh?: number
 
@@ -31,18 +31,18 @@ interface BaseTier {
 	message: (opts: { past: boolean; delta: number; when: Daet }) => string
 }
 /** This tier is relevant until the delta milliseconds is reached. E.g. 1000 milliseconds from now. */
-interface LimitTier extends BaseTier {
+export interface LimitTier extends BaseTier {
 	/** Generate a millisecond delta for when this tier is no longer relevant. */
 	limit: number
 }
 /** This tier is relevant until the absolute milliseconds are reached. E.g. Tomorrow at midnight. */
-interface WhenTier extends BaseTier {
+export interface WhenTier extends BaseTier {
 	/** Generate an epoch time for when this tier is no longer relevant. */
 	when: (opts: { past: boolean }) => number
 }
 
 /** A tier to use for the human relative date display. */
-type Tier = StrictUnion<LimitTier | WhenTier>
+export type Tier = StrictUnion<LimitTier | WhenTier>
 
 /** A minimal immutable date class that supports relative time, calendar time, and plus/minus of different units. */
 export default class Daet {
