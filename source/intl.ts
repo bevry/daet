@@ -1,4 +1,4 @@
-import { Hour, Minute, Second, default as Daet } from './index'
+import { Hour, Minute, Second, default as Daet } from './index.js'
 
 export function rightNow() {
 	return 'right now'

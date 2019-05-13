@@ -3,7 +3,7 @@ import { StrictUnion } from 'simplytyped'
 import memo from '@bevry/memo'
 import startOfWeek from 'start-of-week'
 
-import * as intl from './intl'
+import * as intl from './intl.js'
 
 type SetUnits = 'millisecond' | 'second' | 'minute' | 'hour'
 type ArithmeticUnits =

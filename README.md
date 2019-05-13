@@ -7,7 +7,7 @@
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.org/bevry/daet" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/daet/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-travisci"><a href="http://travis-ci.com/bevry/daet" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/com/bevry/daet/master.svg" alt="Travis CI Build Status" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/daet" title="View this project on NPM"><img src="https://img.shields.io/npm/v/daet.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/daet" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/daet.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/daet" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/daet.svg" alt="Dependency Status" /></a></span>
@@ -58,8 +58,8 @@ Minimal immutable date class that supports relative time, calendar time, and plu
 
 <ul><li><code>daet/source/index.ts</code> is typescript source code with import for modules</li>
 <li><code>daet/edition-browsers/index.js</code> is typescript compiled for browsers with import for modules</li>
-<li><code>daet</code> aliases <code>daet/edition-node-11/index.js</code></li>
-<li><code>daet/edition-node-11/index.js</code> is typescript compiled for node.js 11 with require for modules</li></ul>
+<li><code>daet</code> aliases <code>daet/edition-node-12/index.js</code></li>
+<li><code>daet/edition-node-12/index.js</code> is typescript compiled for node.js 12 with require for modules</li></ul>
 
 <!-- /INSTALL -->
 

@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -59,7 +59,8 @@
       "opencollectiveUsername": "bevry",
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
-      "wishlistURL": "https://bevry.me/wishlist"
+      "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com"
     }
   },
   "author": "2019+ Benjamin Lupton <b@lupton.cc>",
@@ -104,55 +105,56 @@
       }
     },
     {
-      "description": "typescript compiled for node.js 11 with require for modules",
-      "directory": "edition-node-11",
+      "description": "typescript compiled for node.js 12 with require for modules",
+      "directory": "edition-node-12",
       "entry": "index.js",
       "tags": [
         "javascript",
         "require"
       ],
       "engines": {
-        "node": "8 || 10 || 11",
+        "node": "8 || 10 || 11 || 12",
         "browsers": false
       }
     }
   ],
   "types": "source/index.ts",
-  "main": "edition-node-11/index.js",
+  "main": "edition-node-12/index.js",
   "browser": "edition-browsers/index.js",
+  "module": "edition-browsers/index.js",
   "dependencies": {
-    "@bevry/memo": "^1.0.1",
-    "simplytyped": "^3.0.0",
-    "start-of-week": "^1.0.0"
+    "@bevry/memo": "^1.1.0",
+    "simplytyped": "^3.1.0",
+    "start-of-week": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "@babel/preset-typescript": "^7.3.3",
-    "@typescript-eslint/eslint-plugin": "^1.5.0",
-    "@typescript-eslint/parser": "^1.5.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
     "assert-helpers": "^4.9.6",
-    "babel-plugin-add-module-exports": "^1.0.0",
-    "eslint": "^5.15.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^5.16.0",
     "eslint-config-bevry": "^1.2.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "kava": "^3.1.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.17.0",
     "projectz": "^1.7.4",
-    "surge": "^0.20.3",
+    "surge": "^0.20.4",
     "typedoc": "^0.14.2",
-    "typescript": "^3.3.4000",
+    "typescript": "^3.4.5",
     "valid-directory": "^1.0.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
-    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-node-11",
+    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-node-12",
     "our:compile:edition-browsers": "env BABEL_ENV=edition-browsers babel --extensions \".ts,.tsx\" --out-dir ./edition-browsers ./source",
-    "our:compile:edition-node-11": "env BABEL_ENV=edition-node-11 babel --extensions \".ts,.tsx\" --out-dir ./edition-node-11 ./source",
+    "our:compile:edition-node-12": "env BABEL_ENV=edition-node-12 babel --extensions \".ts,.tsx\" --out-dir ./edition-node-12 ./source",
     "our:deploy": "echo no need for this project",
     "our:meta": "npm run our:meta:docs && npm run our:meta:projectz",
     "our:meta:docs": "npm run our:meta:docs:typedoc",
@@ -171,7 +173,7 @@
     "our:verify:directory": "npx valid-directory",
     "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
     "our:verify:typescript": "tsc --noEmit --project .",
-    "test": "node ./edition-node-11/test.js"
+    "test": "node ./edition-node-12/test.js"
   },
   "eslintConfig": {
     "extends": [
@@ -202,14 +204,14 @@
           "add-module-exports"
         ]
       },
-      "edition-node-11": {
+      "edition-node-12": {
         "sourceType": "module",
         "presets": [
           [
             "@babel/preset-env",
             {
               "targets": {
-                "node": "11"
+                "node": "12"
               },
               "modules": "commonjs"
             }

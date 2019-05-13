@@ -1,7 +1,7 @@
 import { suite } from 'kava'
 import { equal } from 'assert-helpers'
 
-import { Second, Minute, Hour, Day, default as Daet } from './index'
+import { Second, Minute, Hour, Day, default as Daet } from './'
 
 suite('Daet', function(suite, test) {
 	test('plus', function() {
