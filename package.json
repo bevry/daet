@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
