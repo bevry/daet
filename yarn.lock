@@ -860,7 +860,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@^12.7.5":
+"@types/node@^12.12.7":
   version "12.12.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.7.tgz#01e4ea724d9e3bd50d90c11fd5980ba317d8fa11"
   integrity sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
@@ -1050,13 +1050,13 @@ asn1@~0.2.3:
     safer-buffer "~2.1.0"
 
 assert-helpers@^4.9.7:
-  version "4.9.7"
-  resolved "https://registry.yarnpkg.com/assert-helpers/-/assert-helpers-4.9.7.tgz#14650c1bef5efb5bafab07a1ce5dddeefb61673a"
-  integrity sha512-3z7TywCscOULaMsieaP4elmkqSvODutMdpB/jgZP8XCcQSiEPgTWapRdYcgZopKHDYXo3XfMFHpG6mafhsUxmQ==
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/assert-helpers/-/assert-helpers-4.10.0.tgz#dd9bf3b2e6f4fbb79f978018421c25d2df3b2546"
+  integrity sha512-btFqjO33cf7DgDYkXfn7KcQfy3xKfXPrUdniuAcdcnMI+0+hGTxEj1IZB7DNjF/keugjIJlxyO9X2B0vji40yA==
   dependencies:
     "@types/ansicolors" "^0.0.31"
     "@types/diff" "^4.0.2"
-    "@types/node" "^12.7.5"
+    "@types/node" "^12.12.7"
     ansicolors "^0.3.2"
     diff "^4.0.1"
     editions "^2.2.0"
@@ -1636,15 +1636,7 @@ editions@^1.1.1, editions@^1.3.4:
   resolved "https://registry.yarnpkg.com/editions/-/editions-1.3.4.tgz#3662cb592347c3168eb8e498a0ff73271d67f50b"
   integrity sha512-gzao+mxnYDzIysXKMQi/+M1mjy/rjestjg6OPoYTtI+3Izp23oiGZitsl9lPDPiTGXbcSIk1iJWhliSaglxnUg==
 
-editions@^2.0.2, editions@^2.1.0, editions@^2.1.2, editions@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/editions/-/editions-2.1.3.tgz#727ccf3ec2c7b12dcc652c71000f16c4824d6f7d"
-  integrity sha512-xDZyVm0A4nLgMNWVVLJvcwMjI80ShiH/27RyLiCnW1L273TcJIA25C4pwJ33AWV01OX6UriP35Xu+lH4S7HWQw==
-  dependencies:
-    errlop "^1.1.1"
-    semver "^5.6.0"
-
-editions@^2.2.0:
+editions@^2.0.2, editions@^2.1.0, editions@^2.1.3, editions@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/editions/-/editions-2.2.0.tgz#dacd0c2a9441ebef592bba316a6264febb337f35"
   integrity sha512-RYg3iEA2BDLCNVe8PUkD+ox5vAKxB9XS/mAhx1bdxGCF0CpX077C0pyTA9t5D6idCYA3avl5/XDHKPsHFrygfw==
@@ -1666,13 +1658,6 @@ emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
-
-errlop@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/errlop/-/errlop-1.1.1.tgz#d9ae4c76c3e64956c5d79e6e035d6343bfd62250"
-  integrity sha512-WX7QjiPHhsny7/PQvrhS5VMizXXKoKCS3udaBp8gjlARdbn+XmK300eKBAAN0hGyRaTCtRpOaxK+xFVPUJ3zkw==
-  dependencies:
-    editions "^2.1.2"
 
 errlop@^1.1.2:
   version "1.1.2"
