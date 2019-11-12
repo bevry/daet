@@ -1050,9 +1050,9 @@ asn1@~0.2.3:
     safer-buffer "~2.1.0"
 
 assert-helpers@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/assert-helpers/-/assert-helpers-5.0.0.tgz#9b04d1ed8d3c00bd74eb2db29fbb77b5175afdaa"
-  integrity sha512-TnKAO9YnQOL26bpupe+R5htzfcTZHBYNJrtjACeAyu0p+nGjIXM/V/nJcqXMpMXo7GDF4tczKqdGQL9rxOo3Tw==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/assert-helpers/-/assert-helpers-5.1.0.tgz#33543819750cb943f454bcf5d2b0913e3af5ece7"
+  integrity sha512-fl+ZuGKKH8qAMjiiEMJeNrsZpNx8NyydX6p16htzzLCnWmY2ZTbS8FNI3oL7UXlgy06fSEYtHggEw+bPb0rmLA==
   dependencies:
     "@types/ansicolors" "^0.0.31"
     "@types/diff" "^4.0.2"
