@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -61,16 +61,14 @@
       "travisTLD": "com"
     }
   },
-  "funding": {
-    "type": "cooperative",
-    "url": "https://bevry.me/fund"
-  },
+  "funding": "https://bevry.me/fund",
   "author": "2019+ Benjamin Lupton <b@lupton.cc>",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc>"
   ],
   "contributors": [
-    "Benjamin Lupton (http://balupton.com)"
+    "Benjamin Lupton (http://balupton.com)",
+    "dependabot-preview[bot] (http://github.com/apps/dependabot-preview)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/daet/issues"
@@ -136,19 +134,19 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-typescript": "^7.7.2",
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
-    "@typescript-eslint/parser": "^2.6.1",
-    "assert-helpers": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "assert-helpers": "^5.3.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "eslint": "^6.6.0",
     "eslint-config-bevry": "^1.2.1",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "kava": "^3.1.0",
-    "prettier": "^1.19.0",
-    "projectz": "^1.7.5",
+    "kava": "^3.2.0",
+    "prettier": "^1.19.1",
+    "projectz": "^1.10.0",
     "surge": "^0.21.3",
-    "typedoc": "^0.15.0",
+    "typedoc": "^0.15.1",
     "typescript": "^3.7.2",
     "valid-directory": "^1.0.0"
   },
