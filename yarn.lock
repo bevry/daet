@@ -942,7 +942,7 @@ ajv@^6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ambi@^3.0.0:
+ambi@3.2.0, ambi@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ambi/-/ambi-3.2.0.tgz#13b45fcf6845465f652137f80176322e911b70d6"
   integrity sha512-nj5sHLPFd7u2OLmHdFs4DHt3gK6edpNw35hTRIKyI/Vd2Th5e4io50rw1lhmCdUNO2Mm4/4FkHmv6shEANAWcw==
@@ -1260,14 +1260,14 @@ caterpillar-human@^3.0.0:
     ansistyles "~0.1.3"
     editions "^1.1.1"
 
-caterpillar@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/caterpillar/-/caterpillar-3.2.0.tgz#8b188c36b702f3a16c855b1557dda3b3347aaa2a"
-  integrity sha512-OXbi2kJkNBRnrq7rG1AL3zXAUlWcuwP/lwGkW6ZIAHfW3jpZCzWp2s69paw08k9QM+PuA+qcyiqAiSTZNLO+ag==
+caterpillar@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/caterpillar/-/caterpillar-3.3.0.tgz#61f74b61940fe23ef94f7d75b26fe8807ba3e6df"
+  integrity sha512-dhCv7xTTg+YXNRDfM9QDhAcWLJfILXVpzOFD9Mw6wOzZSGc6HXy13RjnEMDWLWsn7pMaL+4hYlEJp1b2VvQjLQ==
   dependencies:
-    editions "^2.1.3"
-    extendr "^3.2.0"
-    rfc-log-levels "^1.0.0"
+    editions "^2.2.0"
+    extendr "^3.5.0"
+    rfc-log-levels "^1.1.0"
 
 chalk@^2.0.0, chalk@^2.1.0, chalk@^2.4.2:
   version "2.4.2"
@@ -1433,10 +1433,10 @@ commander@^2.8.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
 
-commander@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-4.0.0.tgz#e782b6afe6a0f1b1408be59429919e1305160e3f"
-  integrity sha512-SEa2abMBTZuEjLVYpNrAFoRgxPwG4rXP3+SGY6CM/HZGeDzIA7Pzp+7H3AHDukKEpyy2SoSGGPShKqqfH9T9AQ==
+commander@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
+  integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
 
 commander@~2.17.1:
   version "2.17.1"
@@ -1835,7 +1835,7 @@ extend@~3.0.2:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
-extendr@^3.2.0, extendr@^3.2.2, extendr@^3.5.0:
+extendr@^3.2.2, extendr@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/extendr/-/extendr-3.5.0.tgz#43463e396d4e41f9fb1a52695fd1d306aa4dbc82"
   integrity sha512-7zpVbnnZy91J4k916ZGwpys56DEgJc/prTXDiqCYe/Mud5pqdVsSc9mG/U6sz3lQEvHs81i8Zi7whsFwifhZyw==
@@ -1865,6 +1865,15 @@ extglob@^2.0.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+extract-opts@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/extract-opts/-/extract-opts-3.3.1.tgz#5abbedc98c0d5202e3278727f9192d7e086c6be1"
+  integrity sha1-WrvtyYwNUgLjJ4cn+Rktfghsa+E=
+  dependencies:
+    eachr "^3.2.0"
+    editions "^1.1.1"
+    typechecker "^4.3.0"
 
 extsprintf@1.3.0:
   version "1.3.0"
@@ -2133,7 +2142,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
-graceful-fs@^4.2.0:
+graceful-fs@^4.2.0, graceful-fs@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
@@ -3159,26 +3168,26 @@ progress@^2.0.0, progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projectz@^1.7.5:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/projectz/-/projectz-1.9.0.tgz#3a278a3e72596e5d34147eefc37bbec7f0518a86"
-  integrity sha512-fH2XIIzMQgSq0StX0IX3g7ySoyu+cD6Ll0zymlhHZLYaESUI3ES2H72tTYxDGcWygBWAaFluh5BG8VAJ2SUy/g==
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/projectz/-/projectz-1.10.0.tgz#8baadeb2fb42dc5a98d2b1d0291e59dc1afc0d8b"
+  integrity sha512-zC01c7uINOS0nYWesqJRcPh+qBMn3FquDqzkkHJirhntaq84BLeOBJFLxBM6v1qUUxaORSIdqUwTaeWjNWEyjg==
   dependencies:
     badges "^1.4.0"
-    caterpillar "^3.2.0"
+    caterpillar "^3.3.0"
     caterpillar-filter "^3.1.0"
     caterpillar-human "^3.0.0"
-    commander "^4.0.0"
+    commander "^4.0.1"
     eachr "^3.2.0"
     extendr "^3.5.0"
     fellow "^2.4.0"
     githubauthquerystring "1.1.0"
     node-fetch "^2.6.0"
-    safefs "^4.1.0"
+    safefs "^5.1.0"
     season "^6.0.2"
     spdx-expression-parse "^3.0.0"
     spdx-license-list "^6.1.0"
-    taskgroup "5"
-    typechecker "^4.8.0"
+    taskgroup "6"
+    typechecker "^4.9.0"
 
 prompt@~0.2.14:
   version "0.2.14"
@@ -3411,7 +3420,7 @@ revalidator@0.1.x:
   resolved "https://registry.yarnpkg.com/revalidator/-/revalidator-0.1.8.tgz#fece61bfa0c1b52a206bd6b18198184bdd523a3b"
   integrity sha1-/s5hv6DBtSoga9axgZgYS91SOjs=
 
-rfc-log-levels@^1.0.0:
+rfc-log-levels@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/rfc-log-levels/-/rfc-log-levels-1.1.0.tgz#fb091437795c2de3947b30353776cab0498c05b7"
   integrity sha512-GFN9gTsQxHSs4PitqsnYO036weay+K7f2gQ3yj5KilKkeZhEDugAKvak1AyMfdae/LlgjcgZjPxL0inPEXueRA==
@@ -3456,6 +3465,24 @@ safefs@^4.1.0:
   dependencies:
     editions "^1.1.1"
     graceful-fs "^4.1.4"
+
+safefs@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/safefs/-/safefs-5.1.0.tgz#bfd4006eeb08c76389e0d3479c0327ac31a1df24"
+  integrity sha512-NfKlkg5Y8xgDTubMmsaURMgHXI1xaLUop94fn5N5wfcIHJsz45IlJAzZUq0XvcHHKhrzGqTy7hgar56fxHKnWw==
+  dependencies:
+    graceful-fs "^4.2.3"
+
+safeps@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/safeps/-/safeps-8.0.0.tgz#704ecc3263833ff1a9c785b6f960cb6831388ed2"
+  integrity sha512-Bwl1INqYoYmkeXL6ymLl7ILP8/mAjZMVohDgKJBo/HszjVuBmPLK2IpPa2ytEACrGctTvcsjRVqDCgY+XW2cSw==
+  dependencies:
+    editions "^2.2.0"
+    extract-opts "^3.3.1"
+    safefs "^4.1.0"
+    taskgroup "^5.3.0"
+    typechecker "^4.8.0"
 
 "safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
@@ -3841,7 +3868,18 @@ tarr@1.1.0:
     fstream ">=1.0.12"
     inherits "2"
 
-taskgroup@5, taskgroup@^5.0.0, taskgroup@^5.3.0:
+taskgroup@6:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/taskgroup/-/taskgroup-6.1.0.tgz#569fa63996594f8a66fe4ee25d07a4d2efdd0038"
+  integrity sha512-+cWiBm3Wx7RB1g54CqhmL6ftpPwBztyxOQQoJmjR4Vh16xDoHyeulP/yfxZVXjeyjSephPVEKBbWqpYM1gPklA==
+  dependencies:
+    ambi "3.2.0"
+    eachr "^3.2.0"
+    extendr "^3.5.0"
+    safeps "8.0.0"
+    unbounded "^1.2.0"
+
+taskgroup@^5.0.0, taskgroup@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/taskgroup/-/taskgroup-5.3.0.tgz#e211c841892ccb8eb78345e98f089d20f3e0dd02"
   integrity sha512-++j3Yi3XZGYgAvmGzRtNa+BnDvkPbdroyMffCY+Gj9A4iH2IJ1S7/g6LewGVXQkVw/KOzlfE1TimARYXvOEsgQ==
@@ -3948,10 +3986,10 @@ type-fest@^0.5.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.5.2.tgz#d6ef42a0356c6cd45f49485c3b6281fc148e48a2"
   integrity sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==
 
-typechecker@^4.3.0, typechecker@^4.7.0, typechecker@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-4.8.0.tgz#d73592e84c808b0b93b48431e98f9a95b129e9e0"
-  integrity sha512-TjffTvOgY4JUHE2FU6fYB/C5+NkERPEoB/JmcZSiVP0s/dykDtFfErlH8xSgH2DnnLDgnE+HMjh5zpCseg0liQ==
+typechecker@^4.3.0, typechecker@^4.7.0, typechecker@^4.8.0, typechecker@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-4.9.0.tgz#e00a0102f858571c7c5cb8af7f440695decae334"
+  integrity sha512-gN9+YYaQ9N8JZpCHJq0z1thokA5UfpzF3NbCJzJbM/vW7XtEZ5QyGE7I0RrBUEaLHDUf/MUXlmVpnVBDfE6AoQ==
   dependencies:
     editions "^2.2.0"
 
@@ -4000,7 +4038,7 @@ uglify-js@^3.1.4:
     commander "~2.17.1"
     source-map "~0.6.1"
 
-unbounded@^1.1.0:
+unbounded@^1.1.0, unbounded@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/unbounded/-/unbounded-1.2.0.tgz#9be43ccfa5cbc0fcd177bc7b96298deba9177117"
   integrity sha512-D/ENuBtxxwhxEiSXHgHwM/UXsDRuXz7JwqBQ54zrbaqmbmSWPvsGMzslr5mEftsDo1KOfl7vEIXGCamWBlAT6Q==
