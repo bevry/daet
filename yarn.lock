@@ -3713,9 +3713,9 @@ stack-trace@0.0.x:
   integrity sha1-VHxws0fo0ytOEI6hoqFZ5f3eGcA=
 
 start-of-week@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/start-of-week/-/start-of-week-1.1.0.tgz#9b729eea7b96fdfc29917727af005839d7483666"
-  integrity sha512-DkHTJJeb0MvakleVNpbfNLZ0TlCG7wJJPvV/kctkDyVdA4A2/5Dt6HNlei0i8CBi8gZ88cBN6LkTzzKkFSlXfQ==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/start-of-week/-/start-of-week-1.2.0.tgz#1d53089b2a0c47173d0d8a5c29210d48edcfa725"
+  integrity sha512-cpgtIxImLvRzlm6EIwexM0xSy+ort+Z3fEyNMumYKXeY5TxLdesaCjiZ34QlstBuuCc7yVhX4nuSTSkBepoXLw==
 
 static-extend@^0.1.1:
   version "0.1.2"
