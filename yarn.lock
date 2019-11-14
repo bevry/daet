@@ -3257,12 +3257,12 @@ readable-stream@^2.0.2, readable-stream@^2.0.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readdir-cluster@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/readdir-cluster/-/readdir-cluster-1.1.0.tgz#b0d3b1a733c113457b4e1ad8991fdf81a8174a77"
-  integrity sha1-sNOxpzPBE0V7ThrYmR/fgagXSnc=
+readdir-cluster@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/readdir-cluster/-/readdir-cluster-1.3.0.tgz#fe48d63afb80d6c9374b367315c11e9756322e0e"
+  integrity sha512-vrIC5KfqjSXPu9hePdRiOrn6cutYCV35p7aohth9Xc402pkgeih1ewLuEcDTzjrJL2q/BnwW/a1aEum7c0AJOA==
   dependencies:
-    editions "^1.1.1"
+    editions "^2.2.0"
 
 readdirp@^2.2.1:
   version "2.2.1"
@@ -4186,17 +4186,17 @@ v8-compile-cache@^2.0.3:
   integrity sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
 
 valid-directory@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/valid-directory/-/valid-directory-1.0.0.tgz#c52960c11db3b502a839d3c51ccdc7628ebe766c"
-  integrity sha512-8aSReAEkNiMKEs39jm4jCyn3z7vHmbFne9m/kF+WG8OhdzXbTBpCNSgxTTVmyryqPF3VpNznVGBsJ4eX3gts7Q==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/valid-directory/-/valid-directory-1.1.1.tgz#ae7c1e7a8b133a319eb509a2b24fa009d2df60e2"
+  integrity sha512-XhAE9D5IsCOQOJ2mMl3cm12UITGXkRJvkeLJyE52vVI2aZjsx5r00/PTWfYm8lBJqOkGZO3pP0x8qIhuOKwbyw==
   dependencies:
-    readdir-cluster "^1.1.0"
-    valid-filename "^2.0.1"
+    readdir-cluster "^1.3.0"
+    valid-filename "^3.1.0"
 
-valid-filename@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/valid-filename/-/valid-filename-2.0.1.tgz#0768d6f364b1ed3bdf68f0d15abffb0d9d6cecaf"
-  integrity sha1-B2jW82Sx7TvfaPDRWr/7DZ1s7K8=
+valid-filename@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/valid-filename/-/valid-filename-3.1.0.tgz#da8766b7714566c155cc36d985824a5e45db01f3"
+  integrity sha512-O99sdfhdGCiWoN4cv6Unq4eJ2EuXwRsOLCeSw+IJyMYgwVK0BPmaUnzhWQw5E8qknLTVrVExCr6xxTBnRBvtsQ==
   dependencies:
     filename-reserved-regex "^2.0.0"
 
