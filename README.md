@@ -56,8 +56,8 @@ Minimal immutable date class that supports relative time, calendar time, and plu
 
 <ul><li><code>daet/source/index.ts</code> is typescript source code with import for modules</li>
 <li><code>daet/edition-browsers/index.js</code> is typescript compiled for browsers with import for modules</li>
-<li><code>daet</code> aliases <code>daet/edition-node-13/index.js</code></li>
-<li><code>daet/edition-node-13/index.js</code> is typescript compiled for node.js 13 with require for modules</li></ul>
+<li><code>daet</code> aliases <code>daet/edition-node-12/index.js</code></li>
+<li><code>daet/edition-node-12/index.js</code> is typescript compiled for node.js 12 with require for modules</li></ul>
 
 <!-- /INSTALL -->
 
