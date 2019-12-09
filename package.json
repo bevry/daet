@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -40,6 +40,7 @@
       "daviddm",
       "daviddmdev",
       "---",
+      "githubsponsors",
       "patreon",
       "flattr",
       "liberapay",
@@ -50,6 +51,7 @@
       "wishlist"
     ],
     "config": {
+      "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
       "flattrUsername": "balupton",
@@ -119,6 +121,7 @@
     }
   ],
   "types": "source/index.ts",
+  "type": "commonjs",
   "main": "edition-node-12/index.js",
   "browser": "edition-browsers/index.js",
   "module": "edition-browsers/index.js",
@@ -128,16 +131,16 @@
     "start-of-week": "^1.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "@babel/preset-typescript": "^7.7.4",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
-    "assert-helpers": "^5.7.0",
+    "assert-helpers": "^5.8.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "eslint": "^6.7.2",
     "eslint-config-bevry": "^2.2.0",
@@ -145,9 +148,9 @@
     "eslint-plugin-prettier": "^3.1.1",
     "kava": "^4.3.0",
     "prettier": "^1.19.1",
-    "projectz": "^1.14.0",
+    "projectz": "^1.15.0",
     "surge": "^0.21.3",
-    "typedoc": "^0.15.3",
+    "typedoc": "^0.15.4",
     "typescript": "^3.7.3",
     "valid-directory": "^1.5.0"
   },
@@ -174,7 +177,7 @@
     "our:verify:directory": "npx valid-directory",
     "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
     "our:verify:prettier": "prettier --write ./source/**",
-    "our:verify:typescript": "tsc --noEmit --project .",
+    "our:verify:typescript": "tsc --noEmit --project tsconfig.json",
     "test": "node ./edition-node-12/test.js"
   },
   "eslintConfig": {
@@ -195,7 +198,7 @@
             "@babel/preset-env",
             {
               "targets": "defaults",
-              "modules": false
+              "modules": "commonjs"
             }
           ],
           "@babel/preset-typescript"
