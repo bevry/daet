@@ -1,24 +1,27 @@
 {
   "name": "daet",
-  "version": "1.11.0",
+  "version": "2.0.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
   "keywords": [
     "add",
     "ago",
+    "browser",
     "calendar",
     "date",
     "dates",
     "datetime",
+    "export-default",
     "format",
     "formatting",
-    "from now",
     "from",
+    "from now",
     "immutable",
     "javascript",
     "minimal",
     "minus",
+    "module",
     "moment",
     "now",
     "parse",
@@ -29,6 +32,7 @@
     "time",
     "timeago",
     "tiny",
+    "typed",
     "types",
     "typescript"
   ],
@@ -84,7 +88,7 @@
   },
   "editions": [
     {
-      "description": "typescript source code with import for modules",
+      "description": "TypeScript source code with Import for modules",
       "directory": "source",
       "entry": "index.ts",
       "tags": [
@@ -94,7 +98,7 @@
       "engines": false
     },
     {
-      "description": "typescript compiled for browsers with import for modules",
+      "description": "TypeScript compiled against ESNext for web browsers with Import for modules",
       "directory": "edition-browsers",
       "entry": "index.js",
       "tags": [
@@ -107,58 +111,52 @@
       }
     },
     {
-      "description": "typescript compiled for node.js 12 with require for modules",
-      "directory": "edition-node-12",
+      "description": "TypeScript compiled against ESNext for Node.js with Require for modules",
+      "directory": "edition-esnext",
       "entry": "index.js",
       "tags": [
         "javascript",
+        "esnext",
         "require"
       ],
       "engines": {
-        "node": "8 || 10 || 12",
+        "node": "8 || 10 || 12 || 13",
         "browsers": false
       }
     }
   ],
   "types": "source/index.ts",
   "type": "commonjs",
-  "main": "edition-node-12/index.js",
+  "main": "edition-esnext/index.js",
   "browser": "edition-browsers/index.js",
   "module": "edition-browsers/index.js",
   "dependencies": {
-    "@bevry/memo": "^1.5.0",
+    "@bevry/memo": "^2.0.0",
     "simplytyped": "^3.2.3",
-    "start-of-week": "^1.5.0"
+    "start-of-week": "^1.7.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-typescript": "^7.7.4",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
     "assert-helpers": "^5.8.0",
-    "babel-plugin-add-module-exports": "^1.0.2",
     "eslint": "^6.7.2",
-    "eslint-config-bevry": "^2.2.0",
+    "eslint-config-bevry": "^2.3.0",
     "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "kava": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "kava": "^4.4.0",
     "prettier": "^1.19.1",
-    "projectz": "^1.15.0",
+    "projectz": "^1.18.0",
     "surge": "^0.21.3",
-    "typedoc": "^0.15.4",
+    "typedoc": "^0.15.5",
     "typescript": "^3.7.3",
-    "valid-directory": "^1.5.0"
+    "valid-directory": "^1.6.0",
+    "valid-module": "^1.0.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
-    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-node-12",
-    "our:compile:edition-browsers": "env BABEL_ENV=edition-browsers babel --extensions \".ts,.tsx\" --out-dir ./edition-browsers ./source",
-    "our:compile:edition-node-12": "env BABEL_ENV=edition-node-12 babel --extensions \".ts,.tsx\" --out-dir ./edition-node-12 ./source",
+    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-esnext",
+    "our:compile:edition-browsers": "tsc --module ESNext --target ESNext --outDir ./edition-browsers --project tsconfig.json && test -d edition-browsers/source && ( mv edition-browsers/source edition-temp && rm -Rf edition-browsers && mv edition-temp edition-browsers ) || true",
+    "our:compile:edition-esnext": "tsc --module commonjs --target ESNext --outDir ./edition-esnext --project tsconfig.json && test -d edition-esnext/source && ( mv edition-esnext/source edition-temp && rm -Rf edition-esnext && mv edition-temp edition-esnext ) || true",
     "our:deploy": "echo no need for this project",
     "our:meta": "npm run our:meta:docs && npm run our:meta:projectz",
     "our:meta:docs": "npm run our:meta:docs:typedoc",
@@ -173,12 +171,13 @@
     "our:setup": "npm run our:setup:install",
     "our:setup:install": "npm install",
     "our:test": "npm run our:verify && npm test",
-    "our:verify": "npm run our:verify:directory && npm run our:verify:eslint && npm run our:verify:prettier && npm run our:verify:typescript",
-    "our:verify:directory": "npx valid-directory",
+    "our:verify": "npm run our:verify:directory && npm run our:verify:eslint && npm run our:verify:module && npm run our:verify:prettier && npm run our:verify:typescript",
+    "our:verify:directory": "valid-directory",
     "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
+    "our:verify:module": "valid-module",
     "our:verify:prettier": "prettier --write ./source/**",
     "our:verify:typescript": "tsc --noEmit --project tsconfig.json",
-    "test": "node ./edition-node-12/test.js"
+    "test": "node ./edition-esnext/test.js"
   },
   "eslintConfig": {
     "extends": [
@@ -188,49 +187,5 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
-  },
-  "babel": {
-    "env": {
-      "edition-browsers": {
-        "sourceType": "module",
-        "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": "defaults",
-              "modules": "commonjs"
-            }
-          ],
-          "@babel/preset-typescript"
-        ],
-        "plugins": [
-          "@babel/proposal-object-rest-spread",
-          "@babel/plugin-proposal-optional-chaining",
-          "@babel/proposal-class-properties",
-          "add-module-exports"
-        ]
-      },
-      "edition-node-12": {
-        "sourceType": "module",
-        "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": {
-                "node": "12"
-              },
-              "modules": "commonjs"
-            }
-          ],
-          "@babel/preset-typescript"
-        ],
-        "plugins": [
-          "@babel/proposal-object-rest-spread",
-          "@babel/plugin-proposal-optional-chaining",
-          "@babel/proposal-class-properties",
-          "add-module-exports"
-        ]
-      }
-    }
   }
 }
