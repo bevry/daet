@@ -35,7 +35,7 @@ Minimal immutable date class that supports relative time, calendar time, and plu
 
 ## Usage
 
-
+[Complete API Documentation.](http://master.daet.bevry.surge.sh/docs/globals.html)
 
 Why use Daet over say?
 
@@ -56,11 +56,6 @@ Beause Daet:
 -   is absolutely tiny in size
 -   yet it has the most intuitive, rich, and efficient relative date interface out there
 
-
-
-
-[Complete API Documentation.](http://master.daet.bevry.surge.sh/docs/)
-
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
@@ -76,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/daet/^2.0.0'
+    import pkg from '//cdn.pika.dev/daet/^3.0.0'
 </script>
 ```
 
@@ -84,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^2.0.0'
+    import pkg from '//unpkg.com/daet@^3.0.0'
 </script>
 ```
 
@@ -92,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@2.0.0'
+    import pkg from '//dev.jspm.io/daet@3.0.0'
 </script>
 ```
 

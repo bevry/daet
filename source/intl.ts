@@ -5,7 +5,7 @@ export function rightNow() {
 }
 export function relativeTicks({
 	past,
-	ticks
+	ticks,
 }: {
 	past: boolean
 	ticks: string
@@ -80,7 +80,7 @@ export function earlierLastWeek() {
 }
 export function relativeThisWeek({
 	past,
-	when
+	when,
 }: {
 	past: boolean
 	when: Daet
@@ -89,13 +89,13 @@ export function relativeThisWeek({
 		? earlierThisWeek()
 		: weekdayThisWeek({
 				weekday: when.format('en', {
-					weekday: 'long'
-				})
+					weekday: 'long',
+				}),
 		  })
 }
 export function relativeSecondWeek({
 	past,
-	when
+	when,
 }: {
 	past: boolean
 	when: Daet
@@ -104,7 +104,7 @@ export function relativeSecondWeek({
 		? earlierLastWeek()
 		: weekdayNextWeek({
 				weekday: when.format('en', {
-					weekday: 'long'
-				})
+					weekday: 'long',
+				}),
 		  })
 }

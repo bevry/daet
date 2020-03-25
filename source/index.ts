@@ -56,50 +56,41 @@ export default class Daet {
 				// right now
 				limit: Second,
 				refresh: Second,
-				message: intl.rightNow
+				message: intl.rightNow,
 			},
 			{
 				// x seconds
 				limit: Minute,
 				refresh: Second,
-				message: intl.relativeDelta
+				message: intl.relativeDelta,
 			},
 			{
 				// x minutes
 				limit: Hour,
 				refresh: Minute,
-				message: intl.relativeDelta
+				message: intl.relativeDelta,
 			},
 			{
 				// x hours x minutes
 				limit: 12 * Hour,
 				refresh: Minute,
-				message: intl.relativeDelta
+				message: intl.relativeDelta,
 			},
 			{
 				// later/earlier today
 				when: ({ past }) =>
 					past
 						? new Daet().reset('hour').getTime()
-						: new Daet()
-								.plus(1, 'day')
-								.reset('hour')
-								.getTime(),
-				message: intl.earlierOrLaterToday
+						: new Daet().plus(1, 'day').reset('hour').getTime(),
+				message: intl.earlierOrLaterToday,
 			},
 			{
 				// yesterday or tomorrow
 				when: ({ past }) =>
 					past
-						? new Daet()
-								.minus(1, 'day')
-								.reset('hour')
-								.getTime()
-						: new Daet()
-								.plus(2, 'day')
-								.reset('hour')
-								.getTime(),
-				message: intl.yesterdayOrTommorow
+						? new Daet().minus(1, 'day').reset('hour').getTime()
+						: new Daet().plus(2, 'day').reset('hour').getTime(),
+				message: intl.yesterdayOrTommorow,
 			},
 			{
 				// this week
@@ -107,27 +98,21 @@ export default class Daet {
 					past
 						? new Daet().endOfLastWeek().getTime()
 						: new Daet().startOfNextWeek().getTime(),
-				message: intl.relativeThisWeek
+				message: intl.relativeThisWeek,
 			},
 			{
 				// next or last week
 				when: ({ past }) =>
 					past
-						? new Daet()
-								.endOfLastWeek()
-								.endOfLastWeek()
-								.getTime()
-						: new Daet()
-								.startOfNextWeek()
-								.startOfNextWeek()
-								.getTime(),
-				message: intl.relativeSecondWeek
+						? new Daet().endOfLastWeek().endOfLastWeek().getTime()
+						: new Daet().startOfNextWeek().startOfNextWeek().getTime(),
+				message: intl.relativeSecondWeek,
 			},
 			{
 				// earlier or later
 				limit: Infinity,
-				message: intl.earlierOrLater
-			}
+				message: intl.earlierOrLater,
+			},
 		]
 	}
 
@@ -297,7 +282,7 @@ export default class Daet {
 			month: 'long',
 			day: 'numeric',
 			hour: 'numeric',
-			minute: 'numeric'
+			minute: 'numeric',
 		})
 	}
 
