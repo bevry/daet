@@ -71,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/daet/^3.2.0'
+    import pkg from '//cdn.pika.dev/daet/^3.3.0'
 </script>
 ```
 
@@ -79,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^3.2.0'
+    import pkg from '//unpkg.com/daet@^3.3.0'
 </script>
 ```
 
@@ -87,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@3.2.0'
+    import pkg from '//dev.jspm.io/daet@3.3.0'
 </script>
 ```
 
@@ -149,9 +149,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li>Benjamin Lupton</li>
-<li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/daet/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/daet">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li>
+<li>Benjamin Lupton</li></ul>
 
 <a href="https://github.com/bevry/daet/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
