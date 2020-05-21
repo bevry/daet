@@ -71,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/daet/^3.3.0'
+    import pkg from '//cdn.pika.dev/daet/^3.4.0'
 </script>
 ```
 
@@ -79,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^3.3.0'
+    import pkg from '//unpkg.com/daet@^3.4.0'
 </script>
 ```
 
@@ -87,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@3.3.0'
+    import pkg from '//dev.jspm.io/daet@3.4.0'
 </script>
 ```
 
@@ -129,7 +129,7 @@ Beause Daet:
 
 These amazing people are maintaining this project:
 
-<ul><li>Benjamin Lupton</li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -149,8 +149,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li>
-<li>Benjamin Lupton</li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/daet/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/daet">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/daet/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
@@ -163,7 +162,7 @@ These amazing people have contributed code to this project:
 
 Unless stated otherwise all works are:
 
-<ul><li>Copyright &copy; 2019+ Benjamin Lupton</li></ul>
+<ul><li>Copyright &copy; 2019+ <a href="https://balupton.com">Benjamin Lupton</a></li></ul>
 
 and licensed under:
 
