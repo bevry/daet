@@ -71,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/daet/^3.7.0'
+    import pkg from '//cdn.pika.dev/daet/^3.8.0'
 </script>
 ```
 
@@ -79,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^3.7.0'
+    import pkg from '//unpkg.com/daet@^3.8.0'
 </script>
 ```
 
@@ -87,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@3.7.0'
+    import pkg from '//dev.jspm.io/daet@3.8.0'
 </script>
 ```
 
