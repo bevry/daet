@@ -135,7 +135,7 @@
   "browser": "edition-browsers/index.js",
   "module": "edition-browsers/index.js",
   "dependencies": {
-    "@bevry/memo": "3.4.0",
+    "@bevry/memo": "3.8.0",
     "simplytyped": "^3.3.0",
     "start-of-week": "2.4.0"
   },

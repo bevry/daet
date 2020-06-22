@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@bevry/memo@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@bevry/memo/-/memo-3.4.0.tgz#d04058d2976dc6f6fe8768ba45c454e5dc12d22b"
-  integrity sha512-/mgkUyGYZRKDu+0qEMKvrQbWLW8AKoym3LRyipjTOdoHLc5XHatmqPAPe19c3RP2PU5rORmTB9rPFnVqZ+8jsw==
+"@bevry/memo@3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@bevry/memo/-/memo-3.8.0.tgz#a4cd0edc51da72a6d390e982ebd1e1a04df1b2f5"
+  integrity sha512-MirzSrMmJo+4cJBKdDTGpHnG5mJJqO+XmAr51xX48xxyeTf5IeW45BiUtsff1arLJpWkFH6DY9H8qX8o9bUNxg==
 
 "@bevry/update-contributors@^1.10.0":
   version "1.12.0"
