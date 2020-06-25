@@ -1,7 +1,8 @@
 /* eslint no-dupe-class-members:0, no-throw-literal:0, no-case-declarations:0 */
 import { StrictUnion } from 'simplytyped'
 import memo from '@bevry/memo'
-import startOfWeek from 'start-of-week'
+import getSW from 'start-of-week'
+const startOfWeek = getSW()
 
 import * as intl from './intl.js'
 
