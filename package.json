@@ -137,7 +137,7 @@
   "dependencies": {
     "@bevry/memo": "3.8.0",
     "simplytyped": "^3.3.0",
-    "start-of-week": "3.0.0"
+    "start-of-week": "3.1.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.12.0",

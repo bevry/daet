@@ -1943,10 +1943,10 @@ stack-trace@0.0.x:
   resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
   integrity sha1-VHxws0fo0ytOEI6hoqFZ5f3eGcA=
 
-start-of-week@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/start-of-week/-/start-of-week-3.0.0.tgz#48682cebac2b87ed601fc8a9ac5c6b96595c9cac"
-  integrity sha512-9sf1dU1WiVwOxb2Ub7dkDVV69S+TtKntCPyb+rL1e2vLEHnrYd7hAViHLyzKD/ABxFEQo5pOFFr/zyrXLrLVqQ==
+start-of-week@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/start-of-week/-/start-of-week-3.1.0.tgz#60516dbcc188c0c427ec47c95a5ad9a5c0195608"
+  integrity sha512-CkERMyv1eGEEPJIscWdgAfVHL20BVo9wmzRpZ8oV+wcu5u7yGtenAp88EqlOKXOGOYGrjZpdriLKedNI/xL/2Q==
 
 string-width@^2.1.0, string-width@^2.1.1:
   version "2.1.1"
