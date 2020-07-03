@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "3.12.0",
+  "version": "3.13.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "MIT",
@@ -208,7 +208,7 @@
     "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
     "our:verify:module": "valid-module",
     "our:verify:prettier": "prettier --write .",
-    "test": "node ./test.cjs"
+    "test": "node ./edition-esnext/test.js"
   },
   "eslintConfig": {
     "extends": [
