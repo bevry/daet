@@ -1,9 +1,9 @@
-import { suite } from 'kava'
+import kava from 'kava'
 import { equal } from 'assert-helpers'
 
 import { Second, Minute, Hour, Day, default as Daet } from './'
 
-suite('Daet', function (suite, test) {
+kava.suite('Daet', function (suite, test) {
 	test('plus', function () {
 		const d = Daet.create()
 		equal(d.getMillisecondsFromNow(), 0, 'zero')
