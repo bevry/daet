@@ -1,4 +1,4 @@
-/* eslint no-dupe-class-members:0, no-throw-literal:0, no-case-declarations:0 */
+/* eslint no-dupe-class-members:0, no-throw-literal:0, no-case-declarations:0, no-use-before-define:0 */
 import { StrictUnion } from 'simplytyped'
 import memo from '@bevry/memo'
 import getSW from 'start-of-week'
