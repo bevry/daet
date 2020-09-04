@@ -1,7 +1,7 @@
 import kava from 'kava'
 import { equal } from 'assert-helpers'
 
-import { Second, Minute, Hour, Day, default as Daet } from './'
+import { Second, Minute, Hour, Day, default as Daet } from './index.js'
 
 kava.suite('Daet', function (suite, test) {
 	test('plus', function () {
