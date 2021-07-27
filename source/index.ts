@@ -250,30 +250,26 @@ export default class Daet {
 	}
 
 	/** Return a new daet instance that is the start of the week proceeding that of this daet instance. */
-	startOfNextWeek = memo(
-		(): Daet => {
-			// continue until we become the start of next week
-			let latest: Daet = this.plus(1, 'day')
-			while (latest.raw.getDay() !== startOfWeek) {
-				latest = latest.plus(1, 'day')
-			}
-			// reset the time, so we become the start time of that week
-			return latest.reset('hour')
+	startOfNextWeek = memo((): Daet => {
+		// continue until we become the start of next week
+		let latest: Daet = this.plus(1, 'day')
+		while (latest.raw.getDay() !== startOfWeek) {
+			latest = latest.plus(1, 'day')
 		}
-	)
+		// reset the time, so we become the start time of that week
+		return latest.reset('hour')
+	})
 
 	/** Return a new daet instance that is the end of the week preceeding that of this daet instance. */
-	endOfLastWeek = memo(
-		(): Daet => {
-			// continue until we become the start of this week
-			let latest: Daet = this
-			while (latest.raw.getDay() !== startOfWeek) {
-				latest = latest.minus(1, 'day')
-			}
-			// reset the time, then minus a second, so we become the end of the prior week
-			return latest.reset('hour').minus(1, 'second')
+	endOfLastWeek = memo((): Daet => {
+		// continue until we become the start of this week
+		let latest: Daet = this
+		while (latest.raw.getDay() !== startOfWeek) {
+			latest = latest.minus(1, 'day')
 		}
-	)
+		// reset the time, then minus a second, so we become the end of the prior week
+		return latest.reset('hour').minus(1, 'second')
+	})
 
 	/** Get the human absolute date display for this daet instance. */
 	calendar(): string {
