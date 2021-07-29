@@ -35,7 +35,7 @@ Minimal immutable date class that supports relative time, calendar time, and plu
 
 ## Usage
 
-[Complete API Documentation.](http://master.daet.bevry.surge.sh/docs/globals.html)
+[Complete API Documentation.](http://master.daet.bevry.surge.sh/docs/)
 
 Why use Daet over say?
 
@@ -71,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/daet@^3.22.0'
+    import pkg from '//cdn.skypack.dev/daet@^3.23.0'
 </script>
 ```
 
@@ -79,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^3.22.0'
+    import pkg from '//unpkg.com/daet@^3.23.0'
 </script>
 ```
 
@@ -87,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@3.22.0'
+    import pkg from '//dev.jspm.io/daet@3.23.0'
 </script>
 ```
 
