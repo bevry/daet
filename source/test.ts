@@ -11,13 +11,13 @@ kava.suite('Daet', function (suite, test) {
 		equal(
 			d.plus(15, 'second').getMillisecondsFromNow(),
 			15 * Second,
-			'15 seconds',
+			'15 seconds'
 		)
 		equal(d.plus(1, 'minute').getMillisecondsFromNow(), Minute, '1 minute')
 		equal(
 			d.plus(15, 'minute').getMillisecondsFromNow(),
 			15 * Minute,
-			'15 minutes',
+			'15 minutes'
 		)
 		equal(d.plus(1, 'hour').getMillisecondsFromNow(), Hour, '1 hour')
 		equal(d.plus(15, 'hour').getMillisecondsFromNow(), 15 * Hour, '15 hours')
@@ -35,19 +35,19 @@ kava.suite('Daet', function (suite, test) {
 		equal(
 			d.plus(1, 'minute').plus(30, 'second').fromNow(),
 			'in 1 minute',
-			'in 1 minute 30 seconds',
+			'in 1 minute 30 seconds'
 		)
 		equal(d.plus(15, 'minute').fromNow(), 'in 15 minutes')
 		equal(d.plus(1, 'hour').fromNow(), 'in 1 hour')
 		equal(
 			d.plus(1, 'hour').plus(30, 'minute').fromNow(),
-			'in 1 hour 30 minutes',
+			'in 1 hour 30 minutes'
 		)
 		// equal(d.plus(13, 'hour').fromNow(), 'later today', '13 hours')
 		equal(d.plus(1, 'day').fromNow(), 'tomorrow', 'in 1 day')
 		equal(
 			d.startOfNextWeek().plus(2, 'day').fromNow(),
-			'next Wednesday', // tests run on ISO-8601 which make Monday start of week
+			'next Wednesday' // tests run on ISO-8601 which make Monday start of week
 		)
 		equal(d.plus(15, 'day').fromNow(), 'sometime later', 'in 15 days')
 		equal(d.plus(400, 'day').fromNow(), 'sometime later', 'in 400 days')

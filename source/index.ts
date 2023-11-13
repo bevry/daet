@@ -128,8 +128,8 @@ export default class Daet {
 			input instanceof Daet
 				? new Date(input.raw)
 				: input
-				? new Date(input)
-				: new Date()
+				  ? new Date(input)
+				  : new Date()
 		this.raw.setMilliseconds(0)
 	}
 
