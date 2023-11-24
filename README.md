@@ -71,7 +71,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/daet@^4.3.0'
+    import pkg from '//cdn.skypack.dev/daet@^4.4.0'
 </script>
 ```
 
@@ -79,7 +79,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/daet@^4.3.0'
+    import pkg from '//unpkg.com/daet@^4.4.0'
 </script>
 ```
 
@@ -87,7 +87,7 @@ Beause Daet:
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/daet@4.3.0'
+    import pkg from '//dev.jspm.io/daet@4.4.0'
 </script>
 ```
 
