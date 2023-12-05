@@ -1,6 +1,6 @@
 {
   "name": "daet",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Minimal immutable date class that supports relative time, calendar time, and plus/minus of different units.",
   "homepage": "https://github.com/bevry/daet",
   "license": "Artistic-2.0",
@@ -12,7 +12,7 @@
     "date",
     "dates",
     "datetime",
-    "es2021",
+    "es2016",
     "es2022",
     "es5",
     "export-default",
@@ -124,7 +124,7 @@
       }
     },
     {
-      "description": "TypeScript compiled against ES2022 for Node.js 12 || 14 || 16 || 18 || 20 || 21 with Require for modules",
+      "description": "TypeScript compiled against ES2022 for Node.js 21 with Require for modules",
       "directory": "edition-es2022",
       "entry": "index.js",
       "tags": [
@@ -139,13 +139,13 @@
       }
     },
     {
-      "description": "TypeScript compiled against ES2021 for Node.js 6 || 8 || 10 || 12 || 14 || 16 || 18 || 20 || 21 with Require for modules",
-      "directory": "edition-es2021",
+      "description": "TypeScript compiled against ES2016 for Node.js 8 with Require for modules",
+      "directory": "edition-es2016",
       "entry": "index.js",
       "tags": [
         "compiled",
         "javascript",
-        "es2021",
+        "es2016",
         "require"
       ],
       "engines": {
@@ -154,7 +154,7 @@
       }
     },
     {
-      "description": "TypeScript compiled against ES5 for Node.js 4 || 6 || 8 || 10 || 12 || 14 || 16 || 18 || 20 || 21 with Require for modules",
+      "description": "TypeScript compiled against ES5 for Node.js 4 with Require for modules",
       "directory": "edition-es5",
       "entry": "index.js",
       "tags": [
@@ -169,7 +169,7 @@
       }
     },
     {
-      "description": "TypeScript compiled against ES2022 for Node.js 12 || 14 || 16 || 18 || 20 || 21 with Import for modules",
+      "description": "TypeScript compiled against ES2022 for Node.js 21 with Import for modules",
       "directory": "edition-es2022-esm",
       "entry": "index.js",
       "tags": [
@@ -213,35 +213,34 @@
   "browser": "edition-browsers/index.js",
   "module": "edition-browsers/index.js",
   "dependencies": {
-    "@bevry/memo": "^4.2.0",
-    "editions": "^6.15.0",
+    "@bevry/memo": "^4.4.0",
+    "editions": "^6.19.0",
     "simplytyped": "^3.3.0",
-    "start-of-week": "^4.3.0"
+    "start-of-week": "^4.4.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.23.0",
-    "@types/node": "^20.10.0",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "assert-helpers": "^11.6.0",
-    "eslint": "^8.54.0",
-    "eslint-config-bevry": "^5.1.0",
-    "eslint-config-prettier": "^9.0.0",
+    "@types/node": "^20.10.3",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "assert-helpers": "^11.9.0",
+    "eslint": "^8.55.0",
+    "eslint-config-bevry": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "kava": "^7.3.0",
+    "kava": "^7.5.0",
     "prettier": "^3.1.0",
-    "projectz": "^3.3.0",
-    "surge": "^0.23.1",
-    "typedoc": "^0.25.3",
-    "typescript": "5.2.2",
-    "valid-directory": "^4.5.0",
-    "valid-module": "^2.5.0"
+    "projectz": "^3.4.0",
+    "typedoc": "^0.25.4",
+    "typescript": "5.3.2",
+    "valid-directory": "^4.6.0",
+    "valid-module": "^2.6.0"
   },
   "scripts": {
     "our:clean": "rm -rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
-    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-es2021 && npm run our:compile:edition-es2022 && npm run our:compile:edition-es2022-esm && npm run our:compile:edition-es5 && npm run our:compile:edition-types",
+    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-es2016 && npm run our:compile:edition-es2022 && npm run our:compile:edition-es2022-esm && npm run our:compile:edition-es5 && npm run our:compile:edition-types",
     "our:compile:edition-browsers": "tsc --module ESNext --target ES2022 --outDir ./edition-browsers --project tsconfig.json && ( test ! -d edition-browsers/source || ( mv edition-browsers/source edition-temp && rm -rf edition-browsers && mv edition-temp edition-browsers ) )",
-    "our:compile:edition-es2021": "tsc --module commonjs --target ES2021 --outDir ./edition-es2021 --project tsconfig.json && ( test ! -d edition-es2021/source || ( mv edition-es2021/source edition-temp && rm -rf edition-es2021 && mv edition-temp edition-es2021 ) ) && printf '%s' '{\"type\": \"commonjs\"}' > edition-es2021/package.json",
+    "our:compile:edition-es2016": "tsc --module commonjs --target ES2016 --outDir ./edition-es2016 --project tsconfig.json && ( test ! -d edition-es2016/source || ( mv edition-es2016/source edition-temp && rm -rf edition-es2016 && mv edition-temp edition-es2016 ) ) && printf '%s' '{\"type\": \"commonjs\"}' > edition-es2016/package.json",
     "our:compile:edition-es2022": "tsc --module commonjs --target ES2022 --outDir ./edition-es2022 --project tsconfig.json && ( test ! -d edition-es2022/source || ( mv edition-es2022/source edition-temp && rm -rf edition-es2022 && mv edition-temp edition-es2022 ) ) && printf '%s' '{\"type\": \"commonjs\"}' > edition-es2022/package.json",
     "our:compile:edition-es2022-esm": "tsc --module ESNext --target ES2022 --outDir ./edition-es2022-esm --project tsconfig.json && ( test ! -d edition-es2022-esm/source || ( mv edition-es2022-esm/source edition-temp && rm -rf edition-es2022-esm && mv edition-temp edition-es2022-esm ) ) && printf '%s' '{\"type\": \"module\"}' > edition-es2022-esm/package.json",
     "our:compile:edition-es5": "tsc --module commonjs --target ES5 --outDir ./edition-es5 --project tsconfig.json && ( test ! -d edition-es5/source || ( mv edition-es5/source edition-temp && rm -rf edition-es5 && mv edition-temp edition-es5 ) ) && printf '%s' '{\"type\": \"commonjs\"}' > edition-es5/package.json",
@@ -276,6 +275,7 @@
   "prettier": {
     "semi": false,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "endOfLine": "lf"
   }
 }
