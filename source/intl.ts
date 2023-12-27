@@ -91,7 +91,7 @@ export function relativeThisWeek({
 				weekday: when.format('en', {
 					weekday: 'long',
 				}),
-		  })
+			})
 }
 export function relativeSecondWeek({
 	past,
@@ -106,5 +106,5 @@ export function relativeSecondWeek({
 				weekday: when.format('en', {
 					weekday: 'long',
 				}),
-		  })
+			})
 }
